@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/partnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="part number:"
+        android:textColor="#b60202"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/partcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textpartnum"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:text="part price:"
+        android:textColor="#b60202"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buypart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/detail"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button5"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="Buy"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buypart"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button5"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="Detail"
+        android:textColor="#fff" />
+
+</RelativeLayout>

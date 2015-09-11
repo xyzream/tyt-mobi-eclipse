@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.betasoft.ToyotaMobi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+   
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:orientation="vertical"
+     
+        >
+
+        <TextView
+            android:id="@+id/txtCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Search for spare part"
+            android:textColor="#B5B6BD"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+   android:layout_marginLeft="2dp"
+    >
+        <EditText
+            android:id="@+id/part_name"
+            android:layout_width="470dp"
+            android:layout_height="40dp"
+           
+            android:layout_marginTop="35dp"
+            android:background="@drawable/registeration_border"
+            android:hint="Enter part name or part number"
+            android:inputType="text"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="12dp"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/search_icon2"
+            android:layout_marginTop="35dp"
+            android:id="@+id/searchicon"
+            
+            />
+</LinearLayout>
+       
+       
+    </LinearLayout>
+
+   
+</RelativeLayout>

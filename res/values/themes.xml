@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme"
+           parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+           parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+      <item name="android:activatedBackgroundIndicator">@drawable/listclick</item>
+        
+      <item name="android:actionBarStyle">@style/MyActionBar</item>
+       <item name="android:background">#b80201</item>
+        <item name="android:actionMenuTextColor">@color/color_accent</item>
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        
+        <item name="android:gravity">center</item>
+
+<item name="android:icon">@android:color/transparent</item> 
+        
+    </style>
+</resources>

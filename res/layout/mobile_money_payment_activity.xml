@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dog.google.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:paddingTop="20dp"/>
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:background="@drawable/alert_background_success"
+                android:text="msg"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+
+
+            <TextView
+                android:id="@+id/textViewsd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Mobile Money Number" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Example 2567########"
+                android:phoneNumber="true">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount" />
+
+            <EditText
+                android:id="@+id/amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <Button
+                android:id="@+id/sendPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proceed "
+                android:textColor="#ffffff"
+                android:background="@drawable/button5"/>
+
+            <TextView
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:textColor="#bc1211"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

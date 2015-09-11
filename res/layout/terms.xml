@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#fff" >
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+
+  <TextView
+      android:id="@+id/txtCenter"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/header"
+      android:layout_margin="20dp"
+      android:layout_marginTop="80dp"
+      android:text="1. Terms
+By accessing this App, you are agreeing to be bound by these App Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.
+ If you do not agree with any of these terms, you are prohibited from using or accessing this App.
+  The materials contained in this App are protected by applicable copyright and trade mark law.
+
+"
+      android:textColor="#938c8c"
+      android:textStyle="bold" />
+
+  </ScrollView>
+
+   <TextView
+       android:id="@+id/tandc_tv"
+       android:layout_width="100dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_marginBottom="250dp"
+       android:layout_marginLeft="100dp"
+       android:text="Read More"
+       android:textColor="#B40404" />
+
+ </RelativeLayout>

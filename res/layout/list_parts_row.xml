@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+    <TextView 
+       android:id="@+id/partnum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:textSize="15dp"
+        android:text="Part Name:"/>
+   
+    <TextView 
+       android:id="@+id/partcost"
+       
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Part Price:"
+        android:textSize="15dp"
+         android:maxLines="3"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textpartnum"/>
+
+        <Button
+            android:id="@+id/buypart"
+            android:layout_width="100dp"
+            
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:background="#b80201"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="Buy"
+            android:textColor="#fff" />
+        
+         <Button
+            android:id="@+id/detail"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buypart"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Detail"
+            android:background="#b80201"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff" />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </RelativeLayout>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E1E1" >
+
+    <Button
+        android:id="@+id/engine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="99dp"
+        android:background="@drawable/button"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Engine Problem"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/Maintenance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/engine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Maintenance Problem"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/Vehicle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Maintenance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Vehicle Maintenance Records"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+</RelativeLayout>

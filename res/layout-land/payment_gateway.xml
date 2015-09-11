@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/body_shopping_kart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Choose Payment Option"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/payment_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/head"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp" >
+
+                <RadioButton
+                    android:id="@+id/mobile_money_rbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Money"
+                    android:textStyle="normal"
+                     />
+
+                <RadioButton
+                    android:id="@+id/cradit_dabit_card_rbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" 
+                    android:text="Credit/Debit Card"
+                     android:textStyle="normal"
+                    />
+            </RadioGroup>
+
+           
+
+            <TextView
+                android:id="@+id/type_in_details_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payment_option"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="Type in delivery details"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/type_in_details_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_in_details_txt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="Plot no. Bla Bla
+P.O.Box no. Bla Bla
+Tel +234 222 222 222
+email id qwerty@gmail.com
+            "
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_in_details_edt"
+                android:layout_margin="30dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/shopping_cart_next_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button5"
+                    android:text="Next" />
+
+                <Button
+                    android:id="@+id/shopping_cart_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/shopping_cart_next_btn"
+                    android:background="@drawable/button5"
+                    android:text="Back" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/item_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="#b2151a"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name_txt"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/logoimg" />
+
+        <RelativeLayout
+            android:id="@+id/item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_img"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+             >
+
+            <TextView
+                android:id="@+id/item_no_txt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Part Number"
+                android:textColor="#b2151a"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@+id/item_no_txt"
+                android:text="Item Number is bla"
+                android:textColor="#b2151a"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/item_price_txt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_no_txt"
+                android:layout_margin="15dp"
+                android:text="Part Price"
+                android:textColor="#b2151a"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_price_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_no_data"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@+id/item_price_txt"
+                android:text="Item Price is bla bla"
+                android:textColor="#b2151a"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_description"
+            android:gravity="center"
+            android:layout_margin="20dp"
+             >
+
+            <Button
+                android:id="@+id/buy_btn"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:padding="8dp"
+                android:text="Buy"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/buy_btn"
+                android:background="@drawable/button"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="Back"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

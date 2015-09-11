@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/body_shopping_kart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Shopping Cart"
+            android:textSize="18dp" />
+
+        <ScrollView
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TableLayout
+                 android:id="@+id/table_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" >
+
+<!--                 <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color"
+                        android:gravity="left"
+                        android:text="Part No."
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color"
+                        android:gravity="left"
+                        android:text="Name"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color"
+                        android:gravity="left"
+                        android:text="QTY"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/color"
+                        android:gravity="left"
+                        android:text="Price"
+                        android:textSize="15sp" />
+                </TableRow>
+ -->            </TableLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/text_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:layout_margin="20dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/total_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:background="@drawable/boder"
+                android:textSize="18dp" >
+            </TextView>
+            
+             <TextView
+                android:id="@+id/Result_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:background="@drawable/boder"
+                android:layout_toRightOf="@+id/total_txt"
+                android:layout_marginLeft="50dp"
+                android:textSize="18dp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp" >
+
+            <CheckBox
+                android:id="@+id/mechanic_rbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <CheckBox
+                android:id="@+id/tandc_rbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mechanic_rbtn"
+                android:checked="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/payment_option_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_border"
+            android:layout_marginBottom="27dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@+id/option" >
+
+            <TextView
+                android:id="@+id/mechanic_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I Need a mechanic" />
+
+            <TextView
+                android:id="@+id/tandc_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mechanic_txt"
+                android:layout_marginTop="14dp"
+                android:text="I accept the terms and conditions " />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_option_txt"
+            android:layout_margin="20dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/proceed_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button5"
+                android:text="Proceed" />
+
+            <Button
+                android:id="@+id/add_other_item_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/proceed_btn"
+                android:background="@drawable/button5"
+                android:text="Add other items" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

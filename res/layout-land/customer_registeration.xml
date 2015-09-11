@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E1E1E1" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="#0170a8"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="#b80201"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tech_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginTop="21dp"
+                android:gravity="center"
+                android:text="Registration"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+        android:id="@+id/holder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center" > -->
+<ScrollView
+     android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+             android:layout_below="@+id/header"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+    >
+        </ScrollView>
+<!--     </RelativeLayout> -->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true" >
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="1.Enter Full Name"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/contactno"
+        android:layout_alignTop="@+id/textViewyourname"
+        android:layout_below="@+id/name_txt"
+        android:background="@drawable/registeration_border"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="12dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/phone_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:text="2.Enter Phone Number"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/contactno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/phone_txt"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/registeration_border"
+        android:ems="10"
+        android:hint="Example: 2567xxxxxxxx"
+        android:inputType="number"
+        android:maxLength="12"
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="12dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/nextbt"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/contactno"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/button5"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+</RelativeLayout>
+
+</RelativeLayout>

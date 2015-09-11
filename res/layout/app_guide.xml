@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.betasoft.MainActivity" >
+    <!--  android:background="#b80201" -->
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewPagerIndicator" >
+    </android.support.v4.view.ViewPager>
+    
+   <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+       
+    </RelativeLayout>
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/viewPager"
+        android:layout_marginRight="20dp"
+         android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/button"
+        android:text="Skip" />
+    </RelativeLayout>
+    <!-- <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editLorem"
+        android:layout_marginBottom="60dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/button"
+        android:text="Skip" />
+
+    <Button
+        android:id="@+id/appguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@drawable/button1"
+        android:text="App Guide"
+         />
+           -->
+
+</RelativeLayout>
